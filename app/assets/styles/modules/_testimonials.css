@@ -1,0 +1,49 @@
+.testimonial{
+
+    background-color: #e0e6ef;
+
+    @mixin atLarge{
+        background: url("/assets/images/testimonials-bg.jpg") top center no-repeat;
+        background-size: cover;
+    }
+    
+    &__item{
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 0 18px 1px 18px;
+        margin-bottom: 98px;
+
+        @mixin atLarge{
+            margin-bottom: 0;
+        }
+
+        &--image{
+            display: block;
+            width: 160px;
+            height: 160px;
+            margin: 0 auto -80px auto;
+            border: 9px solid rgba(255, 255, 255, 0.7);
+            top: -80px;
+            position: relative;
+            border-radius: 80px;
+        }
+
+        &--title{
+            text-align: center;
+            color: $mainBlue;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin:0;
+        }
+
+        &--subtitle{
+            color: $mainOrange;
+            text-align: center;
+            margin: 0.5rem;
+        }
+
+        &-last{
+            margin-bottom: 0;
+        }
+        
+    }
+}

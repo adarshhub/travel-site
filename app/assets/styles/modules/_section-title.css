@@ -4,6 +4,10 @@
     font-weight: 300;
     color: #fff;
 
+    &__blue{
+        color: $mainBlue;
+    }
+
     @mixin atSmall{
         font-size: 2.5rem;
     }
@@ -20,6 +24,11 @@
         @mixin atSmall{
             margin:0 0.5rem 0 0;
             display: inline;
+
+            &__push-down{
+                position: relative;
+                top: 15px;
+            }
 
         }
     }

@@ -1,6 +1,22 @@
 .page_section{
 	padding: 1.1rem 0;
 
+	&__no-b-padding-until-medium{
+		padding-bottom: 0;
+
+		@mixin atMedium{
+			padding-bottom: 1.1rem;
+		}
+	}
+
+	&__no-b-padding-until-large{
+		padding-bottom: 0;
+
+		@mixin atLarge{
+			padding-bottom: 1.1rem;
+		}
+	}
+
 	&__blue {
 		background-color: $mainBlue;
 	}
