@@ -151,7 +151,7 @@
     &__menu-btn--close-x{
 
         &::before{
-            transform: rotate(45deg) scale(1.25);
+            transform: rotate(45deg) scaleX(1.25);
             transform-origin: 0 0;
         }
 
@@ -161,7 +161,7 @@
         }
 
         &::after{
-            transform: rotate(-45deg) scale(1.25) translateY(1px);
+            transform: rotate(-45deg) scaleX(1.25) translateY(1px);
             transform-origin: 0 100%;
         }
 

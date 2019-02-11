@@ -1042,8 +1042,8 @@ a {
         }
 
 .site-header__menu-btn--close-x::before{
-            -webkit-transform: rotate(45deg) scale(1.25);
-                    transform: rotate(45deg) scale(1.25);
+            -webkit-transform: rotate(45deg) scaleX(1.25);
+                    transform: rotate(45deg) scaleX(1.25);
             -webkit-transform-origin: 0 0;
                     transform-origin: 0 0;
         }
@@ -1056,8 +1056,8 @@ a {
         }
 
 .site-header__menu-btn--close-x::after{
-            -webkit-transform: rotate(-45deg) scale(1.25) translateY(1px);
-                    transform: rotate(-45deg) scale(1.25) translateY(1px);
+            -webkit-transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+                    transform: rotate(-45deg) scaleX(1.25) translateY(1px);
             -webkit-transform-origin: 0 100%;
                     transform-origin: 0 100%;
         }
