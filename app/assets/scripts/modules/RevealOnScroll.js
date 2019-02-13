@@ -17,12 +17,10 @@ class RevealOnScroll{
         var that = this;
         this.elements.each(function(){
             var currentItem = this;
-            console.log(currentItem);
             new Waypoint({
                 element: currentItem,
                 handler: function(){
                     $(currentItem).addClass('hide_item__is-visible');
-                    console.log(currentItem);
                 },
                 offset: that.offsetPercentage
             });

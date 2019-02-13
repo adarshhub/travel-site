@@ -864,6 +864,7 @@ a {
     position: absolute;
     z-index: 2;
     width: 100%;
+    transition: all 0.3s ease-out;
 }
 
 .site-header__menu--is-visible{
@@ -874,8 +875,13 @@ a {
 @media (min-width: 800px){
 
 .site-header{
-        background-color: rgba(47,85,114, 0.3)
+        background-color: rgba(47,85,114, 0.3);
+        position: fixed
 }
+
+        .site-header__is-dark{
+            background-color: rgba(1, 50, 67, 0.9);
+        }
 	}
 
 .site-header__menu{
@@ -897,6 +903,7 @@ a {
 
 .site-header__menu{
             opacity: 1;
+            z-index: 0;
             padding-top: 0;
             padding-bottom: 0
     }
@@ -919,8 +926,16 @@ a {
 .site-header__img{
             left: auto;
             -webkit-transform: translateX(0) scale(1);
-                    transform: translateX(0) scale(1)
+                    transform: translateX(0) scale(1);
+            transition: -webkit-transform 0.3s ease-out;
+            transition: transform 0.3s ease-out;
+            transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out
     }
+
+            .site-header__is-dark .site-header__img {
+                -webkit-transform: scale(0.68);
+                        transform: scale(0.68);
+            }
 	}
 
 .site-header__btn{
@@ -979,6 +994,10 @@ a {
                 background-color: transparent;
                 float: left
         }
+
+                .site-header__nav li .is-active{
+                    color: #d59541;
+                }
 	}
 
 .site-header__nav li:last-child{

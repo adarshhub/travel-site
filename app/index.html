@@ -19,9 +19,9 @@
         <a href="#" class="btn site-header__btn">Get in Touch</a>
         <nav class="site-header__nav">
           <ul>
-          <li><a href="#our-beginning">Our Beginning</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a id="our-beginning-nav" href="#our-beginning">Our Beginning</a></li>
+          <li><a id="features-nav" href="#features">Features</a></li>
+          <li><a id="testimonials-nav" href="#testimonials">Testimonials</a></li>
           </ul>
         </nav>
       </div>
@@ -46,7 +46,7 @@
       </div>
   </div>
 
-  <div id="our-beginning" class="page_section">
+  <div id="our-beginning" class="page_section" data-matching-link="#our-beginning-nav">
     <div class="wrapper">
       <h2 class="headline headline__thin headline__b_margin_small headline__t_margin">The first trip we planned <strong>was our own.</strong></h2>
       <h3 class="headline headline__orange headline__narrow headline__b_margin_large">Ever since, we&rsquo;ve been working to make travel <strong>better for everyone.</strong></h3>
@@ -75,7 +75,7 @@
     </div>
   </div>
 
-  <div id="features" class="page_section page_section__blue">
+  <div id="features" class="page_section page_section__blue" data-matching-link="#features-nav">
     <div class="wrapper">
       <h2 class="section-title"><img class="section-title__icon" src="assets/images/icons/star.svg">Our <strong>Features</strong></h2>
       <div class="row row__gutters-large">
@@ -108,7 +108,7 @@
     </div>
   </div>
 
-  <div id="testimonials" class="page_section testimonial page_section__no-b-padding-until-large">
+  <div id="testimonials" class="page_section testimonial page_section__no-b-padding-until-large" data-matching-link="#testimonials-nav">
     <div class="wrapper wrapper__no-padding-until-large">
       <h2 class="section-title section-title__blue"><img class="section-title__icon section-title__icon__push-down" src="assets/images/icons/comment.svg"> Real <strong>Testimonials</strong></h2>
       <div class="row row__gutters row__t-padding row__equal-b">
