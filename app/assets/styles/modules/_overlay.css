@@ -1,0 +1,51 @@
+.overlay{
+    position: fixed;
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 0.89);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    transform: scale(1.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-out;
+
+    &__is-visible{
+        transform: scale(1);
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    &__inner{
+        top: 50%;
+        position: relative;
+        transform: translateY(-50%);
+
+        &--description{
+            font-size: 1.4em;
+            line-height: 2rem;
+        }
+    }
+
+    & h2{
+        color: $mainBlue;
+    }
+
+    &__close{
+        position: absolute;
+        top:15px;
+        right: 15px;
+        font-size: 1.6em;
+        transform: scaleX(1.2);
+        color: $mainBlue;
+        transform-origin: 100% 0;
+        cursor: pointer;
+        
+
+        &:hover{
+            color: $mainOrange;
+        }
+    }
+}

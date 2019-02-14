@@ -461,6 +461,10 @@ a {
 	margin-right: auto;
 }
 
+.wrapper__narrow{
+		max-width: 472px;
+	}
+
 .wrapper__no-padding-until-medium{
 		padding-left: 0;
 		padding-right: 0;
@@ -744,6 +748,7 @@ a {
     font-size: 1.875rem;
     font-weight: 300;
     color: #fff;
+    margin-top: 0;
 }
 
 .section-title__blue{
@@ -770,13 +775,13 @@ a {
 @media (min-width: 530px){
 
 .section-title__icon{
-            margin:0 0.5rem 0 0;
+            margin:0 1rem 0 0;
             display: inline
     }
 
             .section-title__icon__push-down{
                 position: relative;
-                top: 15px;
+                top: 13px;
             }
 	}
 
@@ -1092,4 +1097,84 @@ a {
         opacity: 1;
         -webkit-transform: scale(1);
                 transform: scale(1);
+    }
+
+.overlay{
+    position: fixed;
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 0.89);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-out;
+}
+
+.overlay__is-visible{
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        opacity: 1;
+        visibility: visible;
+    }
+
+.overlay__inner{
+        top: 50%;
+        position: relative;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+    }
+
+.overlay__inner--description{
+            font-size: 1.4em;
+            line-height: 2rem;
+        }
+
+.overlay h2{
+        color: #2f5572;
+    }
+
+.overlay__close{
+        position: absolute;
+        top:15px;
+        right: 15px;
+        font-size: 1.6em;
+        -webkit-transform: scaleX(1.2);
+                transform: scaleX(1.2);
+        color: #2f5572;
+        -webkit-transform-origin: 100% 0;
+                transform-origin: 100% 0;
+        cursor: pointer;
+    }
+
+.overlay__close:hover{
+            color: #d59541;
+        }
+
+.social_icon{
+    display: inline-block;
+    width: 33%;
+    height: 62px;
+    background-color: #d59541;
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 530px){
+
+.social_icon{
+        width: 62px
+}
+	}
+
+.social_icon__icon{
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
     }
